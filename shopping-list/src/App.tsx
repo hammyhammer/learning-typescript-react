@@ -2,11 +2,13 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Greeter from './components/Greeter';
+import ShoppingList from './components/ShoppingList';
 
 function App() {
   return (
-    <div className="App">
-      <Greeter person="Bobby" />
+    <div>
+      {/* <Greeter person="Bobby" /> */}
+      <ShoppingList />
     </div>
   );
 }
