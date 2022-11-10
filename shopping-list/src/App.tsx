@@ -10,8 +10,8 @@ function App() {
   const [items, setItems] = useState<Item[]>([])
   // This is not ideal. The id will be the same for all entries. we can use package
   // to generate random ids. 
-  const addItem = (product: string) => {
-    setItems([...items, { id: 3, product, quantity: 1 }])
+  const addItem = (product: string, quantity: number) => {
+    setItems([...items, { id: 3, product, quantity }])
     console.log("Success")
   }
   // const items = [
