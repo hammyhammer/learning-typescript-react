@@ -1,8 +1,15 @@
 import React from 'react';
 
-export default function Greeter(): JSX.Element {
+// Doing props can be clunky at times. Something we could do is utilize an Interface
+
+interface GreeterProps {
+  person: string;
+
+}
+
+export default function Greeter(props: GreeterProps): JSX.Element {
   return (
-    <h1>Hello There</h1>
+    <h1>Hello There, {props.person}</h1>
   )
 }
 
