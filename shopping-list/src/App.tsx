@@ -8,7 +8,9 @@ import ShoppingForm from './components/ShoppingForm';
 
 function App() {
   const [items, setItems] = useState<Item[]>([])
-
+  const addItem = (product: string) => {
+    console.log("Success")
+  }
   // const items = [
   //   { id: 1, product: "Lemon", quantity: 3 },
   //   { id: 2, product: "Chicken", quantity: 2 },
@@ -17,7 +19,7 @@ function App() {
     <div>
       {/* <Greeter person="Bobby" /> */}
       <ShoppingList items={items} />
-      <ShoppingForm />
+      <ShoppingForm onAddItem={addItem} />
     </div>
   );
 }
